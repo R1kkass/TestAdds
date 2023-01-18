@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.tsx",
-    //webpack-dev-server settings
     devServer: {
         static: {
             contentBase: path.join(__dirname, "dist")
@@ -62,12 +61,6 @@ module.exports = {
 
         ],
     },
-    /* Attempt to resolve these extensions in order.
-       If multiple files share the same name but have
-       different extensions, webpack will resolve the
-       one with the extension listed first in the
-       array and skip the rest.
-     */
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
     },
